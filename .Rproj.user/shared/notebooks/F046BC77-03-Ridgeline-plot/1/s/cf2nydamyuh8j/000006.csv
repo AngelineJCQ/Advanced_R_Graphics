@@ -1,0 +1,4 @@
+"0","ggplot(iris, aes(Sepal.Length, Species, fill = ..ecdf..)) + "
+"0","  stat_density_ridges(calc_ecdf = T, geom = ""density_ridges_gradient"") + "
+"0","  scale_fill_viridis(name = ""Tail Probablity"","
+"0","                     direction = -1)"

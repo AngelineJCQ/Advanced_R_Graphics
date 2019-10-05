@@ -1,0 +1,5 @@
+"0","## 以 y 为分组变量的面积图"
+"0","d <- data.frame(x = rep(1:5, 3), y = c(rep(0, 5), rep(1, 5), rep(3, 5)),"
+"0","                height = c(0, 1, 3, 4, 0, 1, 2, 3, 5, 4, 0, 5, 4, 4, 1))"
+"0","ggplot(d, aes(x, y, height = height, group = y)) + "
+"0","  geom_ridgeline(fill = ""lightblue"")"

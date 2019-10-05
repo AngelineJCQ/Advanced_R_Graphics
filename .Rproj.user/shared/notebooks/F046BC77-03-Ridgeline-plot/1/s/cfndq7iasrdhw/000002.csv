@@ -1,0 +1,5 @@
+"0","p + "
+"0","  geom_density_ridges(aes(fill = Species)) + "
+"0","  theme_ridges() + "
+"0","  scale_x_continuous(expand = c(0.01, 0)) + "
+"0","  scale_y_discrete(expand = c(0.01, 0))"

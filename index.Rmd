@@ -1,0 +1,18 @@
+--- 
+title: '进阶 R 图形'
+author: "Maxine"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+documentclass: book
+always_allow_html: yes
+--- 
+
+
+# Preface {-}  
+
+收集一些较为进阶的 R 可视化图形和方法。
+
+```{r, echo = F}
+knitr::opts_chunk$set(messsage = F)
+```
+

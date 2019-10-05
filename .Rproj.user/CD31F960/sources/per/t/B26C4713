@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1567311181660.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "543523708",
+    "id" : "B26C4713",
+    "lastKnownWriteTime" : 1567315276,
+    "last_content_update" : 1567315276138,
+    "path" : "E:/R/bookdown_test/demo_start.Rmd",
+    "project_path" : null,
+    "properties" : {
+        "cursorPosition" : "102,0",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "99",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

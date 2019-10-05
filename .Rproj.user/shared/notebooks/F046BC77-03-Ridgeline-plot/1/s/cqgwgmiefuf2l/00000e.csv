@@ -1,0 +1,6 @@
+"0","ggplot(iris, aes(x = Sepal.Length, y = Species)) +"
+"0","  geom_density_ridges("
+"0","    jittered_points = TRUE, quantile_lines = TRUE, scale = 0.9, alpha = 0.7,"
+"0","    vline_size = 1, vline_color = ""blue"","
+"0","    point_size = 0.4, point_alpha = 1,"
+"0","    position = position_raincloud(adjust_vlines = T))"

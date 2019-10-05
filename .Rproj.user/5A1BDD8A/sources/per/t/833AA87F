@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570254229566.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "974951963",
+    "id" : "833AA87F",
+    "lastKnownWriteTime" : 1570283597,
+    "last_content_update" : 1570283597533,
+    "path" : "E:/R/books/Advanced_graphics/03-Ridgeline-plot.Rmd",
+    "project_path" : "03-Ridgeline-plot.Rmd",
+    "properties" : {
+        "cursorPosition" : "538,10",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "537"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
