@@ -521,14 +521,14 @@ df$sport <- fct_recode(df$sport,
 
 ```{r}
 p1 <- ggplot(df, aes(ht, sport))
-p + 
+p1 + 
   stat_density_ridges()
 ```
 
 
 添加抖动点、将性别 `sex` 映射到 `fill` 上：  
 ```{r}
-p2 <- p + 
+p2 <- p1 + 
   stat_density_ridges(aes(fill = sex, point_color = sex), alpha = 0.4,
                       jittered_points = TRUE, point_shape = "|",
                       point_size = 2, size = 0.25,
