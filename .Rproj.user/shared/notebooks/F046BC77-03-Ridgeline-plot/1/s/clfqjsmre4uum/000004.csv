@@ -1,3 +1,0 @@
-"0","p + "
-"0","  geom_density_ridges(aes(fill = Species)) + "
-"0","  bbplot::bbc_style()"

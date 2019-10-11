@@ -1,3 +1,0 @@
-"0","p <- ggplot(df, aes(ht, sport))"
-"0","p + "
-"0","  geom_density_ridges()"

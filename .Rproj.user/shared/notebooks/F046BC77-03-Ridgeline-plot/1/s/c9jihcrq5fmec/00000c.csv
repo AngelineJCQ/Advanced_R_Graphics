@@ -1,6 +1,0 @@
-"0","p2 <- p + "
-"0","  stat_density_ridges(aes(fill = sex, point_color = sex), alpha = 0.4,"
-"0","                      jittered_points = TRUE, point_shape = ""|"","
-"0","                      point_size = 3, size = 0.25,"
-"0","                      position = position_points_jitter(height = 0))"
-"0","p2"

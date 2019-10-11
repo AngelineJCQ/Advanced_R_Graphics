@@ -1,2 +1,0 @@
-"0","ggplot(iris, aes(Sepal.Length, Species)) + "
-"0","  stat_density_ridges(quantile_lines = TRUE)"

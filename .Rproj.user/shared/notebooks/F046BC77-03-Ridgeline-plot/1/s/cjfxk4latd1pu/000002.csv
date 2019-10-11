@@ -1,6 +1,0 @@
-"0",""
-"0","p <- ggplot(iris, aes(Sepal.Length, Species))"
-"0",""
-"0","p + "
-"0","  geom_density_ridges() + "
-"0","  theme_ridges()"

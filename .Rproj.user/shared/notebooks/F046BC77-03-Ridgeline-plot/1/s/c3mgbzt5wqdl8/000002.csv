@@ -1,7 +1,0 @@
-"0"," ggplot(diamonds, aes(x = price, y = cut, fill = cut)) + "
-"0","   geom_density_ridges(scale = 4) + "
-"0","   scale_fill_cyclical("
-"0","     values = c(""blue"", ""green""), guide = ""legend"","
-"0","     labels = c(""Fair"" = ""blue"", ""Good"" = ""green""),"
-"0","     name = ""Fill colors"""
-"0","   )"

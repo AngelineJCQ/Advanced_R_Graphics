@@ -1,6 +1,0 @@
-"0","ggplot(iris, aes(x=Sepal.Length, y=Species)) +"
-"0","  geom_density_ridges("
-"0","    jittered_points = TRUE,"
-"0","    position = position_points_jitter(width = 0.05, height = 0),"
-"0","    point_shape = '|', point_size = 3, point_alpha = 1, alpha = 0.7,"
-"0","  )"

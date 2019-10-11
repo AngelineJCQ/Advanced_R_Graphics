@@ -1,7 +1,0 @@
-"0","mpg %>% group_by(class) %>% tally() %>% arrange(desc(n)) %>%"
-"0","  mutate(class = factor(class, levels = class)) %>%"
-"0","  ggplot(aes(class, n, fill = class)) + "
-"0","    geom_col() + "
-"0","    scale_fill_cyclical(values = c(""#4040B0"", ""#9090F0"")) +"
-"0","    scale_y_continuous(expand = c(0, 0)) + "
-"0","    theme_minimal()"
