@@ -81,7 +81,7 @@ ggbarplot(dfm, x = "name", y = "mpg",
 ## `ggdotchart`  
 
 
-`ggdotchart` 是 ggpubr 中用于创建**点图**（非散点图）的函数：  
+`ggdotchart` 是 ggpubr 中用于创建**点图**（一个离散分组变量，一个连续变量，非散点图）的函数：  
 
 ```{r}
 ## 基础用法 
@@ -183,12 +183,59 @@ ggdotchart(dfm, x = "name", y = "mpg",
 
 
 
+## `ggscatter`  
+
+参考： https://rpkgs.datanovia.com/ggpubr/reference/ggscatter.html  
+
+`ggscatter()`用于创建二维散点图（两个连续型变量，区分于之前的点图）：  
+
+```{r}
+df <- mtcars
+df$cyl <- as.factor(df$cyl)
+## 简单散点图
+ggscatter(df, x = "wt", 
+          y = "mpg",
+          color = "cyl")
+```
 
 
 
+这里介绍 `ggscatter` 的最主要原因是因为它可以很方便地在散点图上添加有关回归模型和相关系数的数据标记：  
+
+* `add = "reg.line"` 和 `add = "loess"` 添加线性回归和局部加权回归拟合线  
+* `add.params`: 设置拟合线的样式，例如 `add.params = list(color = "red")`  
+* `cor.coef = TRUE` 添加数据标记，展示相关系数和其 p value   
+* `cor.coef.args` 指定相关系数算法和呈现细节
+* `cor.method`: 指定相关系数的算法，有"pearson", "kendall" 和 "spearman"  
+* `cor.coef.size`: 调节该标签的大小 	
 
 
+```{r}
+ggscatter(df, x = "wt", y = "mpg",
+   color = "black", shape = 21, size = 3, # Points color, shape and size
+   add = "reg.line",  # Add regressin line
+   add.params = list(color = "blue", fill = "lightgray"), # Customize reg. line
+   conf.int = TRUE, # Add confidence interval
+   cor.coef = TRUE, # Add correlation coefficient. see ?stat_cor
+   cor.coeff.args = list(method = "pearson", label.x = 3, label.sep = "\n")
+   )
+```
 
+
+`conf.int = TRUE`（默认） 和 `conf.int.level`（默认 0.95） 可以绘制置信区间：  
+
+```{r}
+ggscatter(
+  df,
+  x = "wt",
+  y = "mpg",
+  color = "black", shape = 21, size = 3,
+  add = "loess",
+  add.params = list(color = "blue"),
+  conf.int = TRUE,
+  conf.int.level = 0.9
+) 
+```
 
 
 
@@ -229,7 +276,7 @@ ggscatterhist(
 )
 ```
 
-`margin.plot = "density"`(默认) 绘制核密度估计图，选择 "histogram" 绘制直方图：  
+`margin.plot = "density"`(默认) 绘制核密度估计图，选择 "histogram" 绘制直方图；"boxplot"为直方图：  
 
 ```{r}
 ggscatterhist(
@@ -256,7 +303,7 @@ ggscatterhist(
   color = "black",
   fill = "class",
   palette = c("#00AFBB", "#E7B800", "#FC4E07"),
-  margin.plot = "density",
+  margin.plot = "boxplot",
   margin.params = list(alpha = 0.5, fill = "class", color = "black"),
   ggtheme = theme_minimal()，
 ) 
@@ -273,7 +320,7 @@ ggscatterhist(
   color = "black",
   fill = "class",
   palette = c("#00AFBB", "#E7B800", "#FC4E07"),
-  margin.plot = "density",
+  margin.plot = "boxplot",
   margin.params = list(alpha = 0.5, fill = "class", color = "black"),
   ggtheme = theme_minimal()，
   xlab = FALSE,  ## 取消标签
@@ -281,6 +328,9 @@ ggscatterhist(
   title = "A scatterhist plot"
 ) 
 ```
+
+
+
 
 ## `ggarrange`  
 

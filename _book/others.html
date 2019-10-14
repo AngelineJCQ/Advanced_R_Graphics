@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>进阶 R 图形</title>
-  <meta name="description" content="进阶 R 图形" />
+  <title>5 其他 | 进阶 R 图形</title>
+  <meta name="description" content="5 其他 | 进阶 R 图形" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="进阶 R 图形" />
+  <meta property="og:title" content="5 其他 | 进阶 R 图形" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="进阶 R 图形" />
+  <meta name="twitter:title" content="5 其他 | 进阶 R 图形" />
   
   
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
+<link rel="prev" href="ggpubr.html"/>
 
-<link rel="next" href="Econmist.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -188,23 +188,46 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="header">
-<h1 class="title">进阶 R 图形</h1>
-<p class="author"><em>Maxine</em></p>
-<p class="date"><em>2019-10-12</em></p>
+<div id="others" class="section level1">
+<h1><span class="header-section-number">5</span> 其他</h1>
+<div id="Raincloud" class="section level2">
+<h2><span class="header-section-number">5.1</span> 云雨图</h2>
+<p>云雨图可以看成核密度曲线估计图，箱线图和抖动散点图的组合图表。有三个主要图层：自定义的半小提琴函数 <code>geom_flat_violin()</code>、箱线图<code>geom_boxplot()</code> 和抖动散点图 <code>geom_jitter()</code>。其中半小提琴图的函数来自 <a href="https://gist.github.com/dgrtwo/eb7750e74997891d7c20" class="uri">https://gist.github.com/dgrtwo/eb7750e74997891d7c20</a></p>
+<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb120-1" title="1"><span class="co">## 半小提琴图的示例  </span></a>
+<a class="sourceLine" id="cb120-2" title="2"><span class="kw">source</span>(<span class="st">&quot;examples/geom_flat_violin.R&quot;</span>)</a>
+<a class="sourceLine" id="cb120-3" title="3">diamonds_sub &lt;-<span class="st"> </span>diamonds[<span class="kw">sample</span>(<span class="kw">nrow</span>(diamonds), <span class="dv">1500</span>), ]</a>
+<a class="sourceLine" id="cb120-4" title="4">p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamonds_sub, <span class="kw">aes</span>(cut, carat, <span class="dt">fill =</span> cut))</a>
+<a class="sourceLine" id="cb120-5" title="5">p <span class="op">+</span><span class="st"> </span><span class="kw">geom_flat_violin</span>()    </a></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-95-1.svg" width="672" /></p>
+<p>相比于 ggplot2 自带的 <code>geom_violin</code>, 半小提琴图省却了多余的一半核密度估计曲线，这为叠加其他图层增加了方便：</p>
+<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb121-1" title="1">p <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb121-2" title="2"><span class="st">  </span><span class="kw">geom_flat_violin</span>(<span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.25</span>)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb121-3" title="3"><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.25</span>),</a>
+<a class="sourceLine" id="cb121-4" title="4">               <span class="dt">width =</span> <span class="fl">0.1</span>) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb121-5" title="5"><span class="st">  </span><span class="kw">geom_jitter</span>(<span class="kw">aes</span>(<span class="dt">color =</span> cut), <span class="dt">width =</span>  <span class="fl">0.1</span>,</a>
+<a class="sourceLine" id="cb121-6" title="6">              <span class="dt">size =</span> <span class="fl">0.5</span>)</a></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-96-1.svg" width="672" /></p>
+<p>上面就是一副比较基本的云雨图了，几个关键点：</p>
+<ol style="list-style-type: decimal">
+<li>箱线图一般都会过宽，从而遮挡半小提琴图和散点图的位置，应该减小<code>geom_boxplot()</code> 中的 <code>width</code><br />
+</li>
+<li>半小提琴图应该和箱线图在一条轴线上，且与抖动点分离。这里的操作是将 <code>geom_flat_vilon()</code> 和 <code>geom_boxplot()</code> 平移了相同距离<br />
+</li>
+<li>别忘了还要映射抖动点的颜色属性</li>
+</ol>
 </div>
-<div id="preface" class="section level1 unnumbered">
-<h1>Preface</h1>
-<p>收集一些较为进阶的 R 可视化图形和方法。</p>
+<div id="坡度图" class="section level2">
+<h2><span class="header-section-number">5.2</span> 坡度图</h2>
 
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
+<a href="ggpubr.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 
-<a href="Econmist.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
