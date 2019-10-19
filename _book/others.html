@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>5 其他 | 进阶 R 图形</title>
-  <meta name="description" content="5 其他 | 进阶 R 图形" />
+  <title>3 其他 | 进阶 R 图形</title>
+  <meta name="description" content="3 其他 | 进阶 R 图形" />
   <meta name="generator" content="bookdown 0.14 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="5 其他 | 进阶 R 图形" />
+  <meta property="og:title" content="3 其他 | 进阶 R 图形" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="5 其他 | 进阶 R 图形" />
+  <meta name="twitter:title" content="3 其他 | 进阶 R 图形" />
   
   
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Maxine" />
 
 
-<meta name="date" content="2019-10-12" />
+<meta name="date" content="2019-10-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="ggpubr.html"/>
-
+<link rel="next" href="bbplot.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -132,42 +132,54 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 <li class="divider"></li>
 <li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Preface</a></li>
-<li class="chapter" data-level="1" data-path="Econmist.html"><a href="Econmist.html"><i class="fa fa-check"></i><b>1</b> 经济学人：Corruption and human development</a></li>
-<li class="chapter" data-level="2" data-path="bbplot.html"><a href="bbplot.html"><i class="fa fa-check"></i><b>2</b> bbplot</a><ul>
-<li class="chapter" data-level="2.1" data-path="bbplot.html"><a href="bbplot.html#简介bbc_style-和-finalize_plot"><i class="fa fa-check"></i><b>2.1</b> 简介：<code>bbc_style()</code> 和 <code>finalize_plot()</code></a></li>
-<li class="chapter" data-level="2.2" data-path="bbplot.html"><a href="bbplot.html#折线图"><i class="fa fa-check"></i><b>2.2</b> 折线图</a></li>
-<li class="chapter" data-level="2.3" data-path="bbplot.html"><a href="bbplot.html#条形图"><i class="fa fa-check"></i><b>2.3</b> 条形图</a><ul>
-<li class="chapter" data-level="2.3.1" data-path="bbplot.html"><a href="bbplot.html#堆积条形图"><i class="fa fa-check"></i><b>2.3.1</b> 堆积条形图</a></li>
-<li class="chapter" data-level="2.3.2" data-path="bbplot.html"><a href="bbplot.html#簇状条形图"><i class="fa fa-check"></i><b>2.3.2</b> 簇状条形图</a></li>
+<li class="part"><span><b>I 几何对象</b></span></li>
+<li class="chapter" data-level="1" data-path="Ridge.html"><a href="Ridge.html"><i class="fa fa-check"></i><b>1</b> 山峦图</a><ul>
+<li class="chapter" data-level="1.1" data-path="Ridge.html"><a href="Ridge.html#简介"><i class="fa fa-check"></i><b>1.1</b> 简介</a></li>
+<li class="chapter" data-level="1.2" data-path="Ridge.html"><a href="Ridge.html#ridgeline"><i class="fa fa-check"></i><b>1.2</b> <code>ridgeline</code></a></li>
+<li class="chapter" data-level="1.3" data-path="Ridge.html"><a href="Ridge.html#density_ridges"><i class="fa fa-check"></i><b>1.3</b> <code>density_ridges()</code></a></li>
+<li class="chapter" data-level="1.4" data-path="Ridge.html"><a href="Ridge.html#映射填充色-varying-fill-colors-along-the-x-axis"><i class="fa fa-check"></i><b>1.4</b> 映射填充色 (Varying fill colors along the x axis)</a></li>
+<li class="chapter" data-level="1.5" data-path="Ridge.html"><a href="Ridge.html#统计变换"><i class="fa fa-check"></i><b>1.5</b> 统计变换</a><ul>
+<li class="chapter" data-level="1.5.1" data-path="Ridge.html"><a href="Ridge.html#分位数线"><i class="fa fa-check"></i><b>1.5.1</b> 分位数线</a></li>
+<li class="chapter" data-level="1.5.2" data-path="Ridge.html"><a href="Ridge.html#添加抖动点"><i class="fa fa-check"></i><b>1.5.2</b> 添加抖动点</a></li>
+<li class="chapter" data-level="1.5.3" data-path="Ridge.html"><a href="Ridge.html#其他统计变换"><i class="fa fa-check"></i><b>1.5.3</b> 其他统计变换</a></li>
 </ul></li>
-<li class="chapter" data-level="2.4" data-path="bbplot.html"><a href="bbplot.html#哑铃图"><i class="fa fa-check"></i><b>2.4</b> 哑铃图</a></li>
-<li class="chapter" data-level="2.5" data-path="bbplot.html"><a href="bbplot.html#直方图"><i class="fa fa-check"></i><b>2.5</b> 直方图</a></li>
+<li class="chapter" data-level="1.6" data-path="Ridge.html"><a href="Ridge.html#主题"><i class="fa fa-check"></i><b>1.6</b> 主题</a></li>
+<li class="chapter" data-level="1.7" data-path="Ridge.html"><a href="Ridge.html#循环标度"><i class="fa fa-check"></i><b>1.7</b> 循环标度</a></li>
+<li class="chapter" data-level="1.8" data-path="Ridge.html"><a href="Ridge.html#实例澳大利亚运动员身高"><i class="fa fa-check"></i><b>1.8</b> 实例：澳大利亚运动员身高</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="Ridge.html"><a href="Ridge.html"><i class="fa fa-check"></i><b>3</b> 山峦图</a><ul>
-<li class="chapter" data-level="3.1" data-path="Ridge.html"><a href="Ridge.html#简介"><i class="fa fa-check"></i><b>3.1</b> 简介</a></li>
-<li class="chapter" data-level="3.2" data-path="Ridge.html"><a href="Ridge.html#ridgeline"><i class="fa fa-check"></i><b>3.2</b> <code>ridgeline</code></a></li>
-<li class="chapter" data-level="3.3" data-path="Ridge.html"><a href="Ridge.html#density_ridges"><i class="fa fa-check"></i><b>3.3</b> <code>density_ridges()</code></a></li>
-<li class="chapter" data-level="3.4" data-path="Ridge.html"><a href="Ridge.html#映射填充色-varying-fill-colors-along-the-x-axis"><i class="fa fa-check"></i><b>3.4</b> 映射填充色 (Varying fill colors along the x axis)</a></li>
-<li class="chapter" data-level="3.5" data-path="Ridge.html"><a href="Ridge.html#统计变换"><i class="fa fa-check"></i><b>3.5</b> 统计变换</a><ul>
-<li class="chapter" data-level="3.5.1" data-path="Ridge.html"><a href="Ridge.html#分位数线"><i class="fa fa-check"></i><b>3.5.1</b> 分位数线</a></li>
-<li class="chapter" data-level="3.5.2" data-path="Ridge.html"><a href="Ridge.html#添加抖动点"><i class="fa fa-check"></i><b>3.5.2</b> 添加抖动点</a></li>
-<li class="chapter" data-level="3.5.3" data-path="Ridge.html"><a href="Ridge.html#其他统计变换"><i class="fa fa-check"></i><b>3.5.3</b> 其他统计变换</a></li>
+<li class="chapter" data-level="2" data-path="ggpubr.html"><a href="ggpubr.html"><i class="fa fa-check"></i><b>2</b> <code>ggpubr</code></a><ul>
+<li class="chapter" data-level="2.1" data-path="ggpubr.html"><a href="ggpubr.html#ggbarplot"><i class="fa fa-check"></i><b>2.1</b> <code>ggbarplot</code></a></li>
+<li class="chapter" data-level="2.2" data-path="ggpubr.html"><a href="ggpubr.html#ggdotchart"><i class="fa fa-check"></i><b>2.2</b> <code>ggdotchart</code></a></li>
+<li class="chapter" data-level="2.3" data-path="ggpubr.html"><a href="ggpubr.html#ggscatter"><i class="fa fa-check"></i><b>2.3</b> <code>ggscatter</code></a></li>
+<li class="chapter" data-level="2.4" data-path="ggpubr.html"><a href="ggpubr.html#ggscatterhist"><i class="fa fa-check"></i><b>2.4</b> <code>ggscatterhist</code></a></li>
+<li class="chapter" data-level="2.5" data-path="ggpubr.html"><a href="ggpubr.html#ggarrange"><i class="fa fa-check"></i><b>2.5</b> <code>ggarrange</code></a></li>
 </ul></li>
-<li class="chapter" data-level="3.6" data-path="Ridge.html"><a href="Ridge.html#主题"><i class="fa fa-check"></i><b>3.6</b> 主题</a></li>
-<li class="chapter" data-level="3.7" data-path="Ridge.html"><a href="Ridge.html#循环标度"><i class="fa fa-check"></i><b>3.7</b> 循环标度</a></li>
-<li class="chapter" data-level="3.8" data-path="Ridge.html"><a href="Ridge.html#实例澳大利亚运动员身高"><i class="fa fa-check"></i><b>3.8</b> 实例：澳大利亚运动员身高</a></li>
+<li class="chapter" data-level="3" data-path="others.html"><a href="others.html"><i class="fa fa-check"></i><b>3</b> 其他</a><ul>
+<li class="chapter" data-level="3.1" data-path="others.html"><a href="others.html#Raincloud"><i class="fa fa-check"></i><b>3.1</b> 云雨图</a></li>
+<li class="chapter" data-level="3.2" data-path="others.html"><a href="others.html#坡度图"><i class="fa fa-check"></i><b>3.2</b> 坡度图</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="ggpubr.html"><a href="ggpubr.html"><i class="fa fa-check"></i><b>4</b> <code>ggpubr</code></a><ul>
-<li class="chapter" data-level="4.1" data-path="ggpubr.html"><a href="ggpubr.html#ggbarplot"><i class="fa fa-check"></i><b>4.1</b> <code>ggbarplot</code></a></li>
-<li class="chapter" data-level="4.2" data-path="ggpubr.html"><a href="ggpubr.html#ggdotchart"><i class="fa fa-check"></i><b>4.2</b> <code>ggdotchart</code></a></li>
-<li class="chapter" data-level="4.3" data-path="ggpubr.html"><a href="ggpubr.html#ggscatter"><i class="fa fa-check"></i><b>4.3</b> <code>ggscatter</code></a></li>
-<li class="chapter" data-level="4.4" data-path="ggpubr.html"><a href="ggpubr.html#ggscatterhist"><i class="fa fa-check"></i><b>4.4</b> <code>ggscatterhist</code></a></li>
-<li class="chapter" data-level="4.5" data-path="ggpubr.html"><a href="ggpubr.html#ggarrange"><i class="fa fa-check"></i><b>4.5</b> <code>ggarrange</code></a></li>
+<li class="part"><span><b>II 主题与排版</b></span></li>
+<li class="chapter" data-level="4" data-path="bbplot.html"><a href="bbplot.html"><i class="fa fa-check"></i><b>4</b> bbplot</a><ul>
+<li class="chapter" data-level="4.1" data-path="bbplot.html"><a href="bbplot.html#简介bbc_style-和-finalize_plot"><i class="fa fa-check"></i><b>4.1</b> 简介：<code>bbc_style()</code> 和 <code>finalize_plot()</code></a></li>
+<li class="chapter" data-level="4.2" data-path="bbplot.html"><a href="bbplot.html#折线图"><i class="fa fa-check"></i><b>4.2</b> 折线图</a></li>
+<li class="chapter" data-level="4.3" data-path="bbplot.html"><a href="bbplot.html#条形图"><i class="fa fa-check"></i><b>4.3</b> 条形图</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="bbplot.html"><a href="bbplot.html#堆积条形图"><i class="fa fa-check"></i><b>4.3.1</b> 堆积条形图</a></li>
+<li class="chapter" data-level="4.3.2" data-path="bbplot.html"><a href="bbplot.html#簇状条形图"><i class="fa fa-check"></i><b>4.3.2</b> 簇状条形图</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="others.html"><a href="others.html"><i class="fa fa-check"></i><b>5</b> 其他</a><ul>
-<li class="chapter" data-level="5.1" data-path="others.html"><a href="others.html#Raincloud"><i class="fa fa-check"></i><b>5.1</b> 云雨图</a></li>
-<li class="chapter" data-level="5.2" data-path="others.html"><a href="others.html#坡度图"><i class="fa fa-check"></i><b>5.2</b> 坡度图</a></li>
+<li class="chapter" data-level="4.4" data-path="bbplot.html"><a href="bbplot.html#哑铃图"><i class="fa fa-check"></i><b>4.4</b> 哑铃图</a></li>
+<li class="chapter" data-level="4.5" data-path="bbplot.html"><a href="bbplot.html#直方图"><i class="fa fa-check"></i><b>4.5</b> 直方图</a></li>
 </ul></li>
+<li class="chapter" data-level="5" data-path="ggdark.html"><a href="ggdark.html"><i class="fa fa-check"></i><b>5</b> ggdark</a><ul>
+<li class="chapter" data-level="5.1" data-path="ggdark.html"><a href="ggdark.html#dark_mode"><i class="fa fa-check"></i><b>5.1</b> <code>dark_mode</code></a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="patchwork.html"><a href="patchwork.html"><i class="fa fa-check"></i><b>6</b> <code>patchwork</code></a><ul>
+<li class="chapter" data-level="6.1" data-path="patchwork.html"><a href="patchwork.html#布局和嵌套"><i class="fa fa-check"></i><b>6.1</b> 布局和嵌套</a></li>
+<li class="chapter" data-level="6.2" data-path="patchwork.html"><a href="patchwork.html#注解"><i class="fa fa-check"></i><b>6.2</b> 注解</a></li>
+<li class="chapter" data-level="6.3" data-path="patchwork.html"><a href="patchwork.html#运算符"><i class="fa fa-check"></i><b>6.3</b> 运算符</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="ggthemes.html"><a href="ggthemes.html"><i class="fa fa-check"></i><b>7</b> <code>ggthemes</code></a></li>
+<li class="part"><span><b>III 实例</b></span></li>
+<li class="chapter" data-level="8" data-path="Econmist.html"><a href="Econmist.html"><i class="fa fa-check"></i><b>8</b> 经济学人：Corruption and human development</a></li>
 <li class="divider"></li>
 <li><a href="https://bookdown.org" target="blank">written with bookdown</a></li>
 
@@ -189,24 +201,24 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
             <section class="normal" id="section-">
 <div id="others" class="section level1">
-<h1><span class="header-section-number">5</span> 其他</h1>
+<h1><span class="header-section-number">3</span> 其他</h1>
 <div id="Raincloud" class="section level2">
-<h2><span class="header-section-number">5.1</span> 云雨图</h2>
+<h2><span class="header-section-number">3.1</span> 云雨图</h2>
 <p>云雨图可以看成核密度曲线估计图，箱线图和抖动散点图的组合图表。有三个主要图层：自定义的半小提琴函数 <code>geom_flat_violin()</code>、箱线图<code>geom_boxplot()</code> 和抖动散点图 <code>geom_jitter()</code>。其中半小提琴图的函数来自 <a href="https://gist.github.com/dgrtwo/eb7750e74997891d7c20" class="uri">https://gist.github.com/dgrtwo/eb7750e74997891d7c20</a></p>
-<div class="sourceCode" id="cb120"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb120-1" title="1"><span class="co">## 半小提琴图的示例  </span></a>
-<a class="sourceLine" id="cb120-2" title="2"><span class="kw">source</span>(<span class="st">&quot;examples/geom_flat_violin.R&quot;</span>)</a>
-<a class="sourceLine" id="cb120-3" title="3">diamonds_sub &lt;-<span class="st"> </span>diamonds[<span class="kw">sample</span>(<span class="kw">nrow</span>(diamonds), <span class="dv">1500</span>), ]</a>
-<a class="sourceLine" id="cb120-4" title="4">p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamonds_sub, <span class="kw">aes</span>(cut, carat, <span class="dt">fill =</span> cut))</a>
-<a class="sourceLine" id="cb120-5" title="5">p <span class="op">+</span><span class="st"> </span><span class="kw">geom_flat_violin</span>()    </a></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-95-1.svg" width="672" /></p>
+<div class="sourceCode" id="cb70"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb70-1" title="1"><span class="co">## 半小提琴图的示例  </span></a>
+<a class="sourceLine" id="cb70-2" title="2"><span class="kw">source</span>(<span class="st">&quot;examples/geom_flat_violin.R&quot;</span>)</a>
+<a class="sourceLine" id="cb70-3" title="3">diamonds_sub &lt;-<span class="st"> </span>diamonds[<span class="kw">sample</span>(<span class="kw">nrow</span>(diamonds), <span class="dv">1500</span>), ]</a>
+<a class="sourceLine" id="cb70-4" title="4">p &lt;-<span class="st"> </span><span class="kw">ggplot</span>(diamonds_sub, <span class="kw">aes</span>(cut, carat, <span class="dt">fill =</span> cut))</a>
+<a class="sourceLine" id="cb70-5" title="5">p <span class="op">+</span><span class="st"> </span><span class="kw">geom_flat_violin</span>()    </a></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-70-1.svg" width="672" /></p>
 <p>相比于 ggplot2 自带的 <code>geom_violin</code>, 半小提琴图省却了多余的一半核密度估计曲线，这为叠加其他图层增加了方便：</p>
-<div class="sourceCode" id="cb121"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb121-1" title="1">p <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb121-2" title="2"><span class="st">  </span><span class="kw">geom_flat_violin</span>(<span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.25</span>)) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb121-3" title="3"><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.25</span>),</a>
-<a class="sourceLine" id="cb121-4" title="4">               <span class="dt">width =</span> <span class="fl">0.1</span>) <span class="op">+</span><span class="st"> </span></a>
-<a class="sourceLine" id="cb121-5" title="5"><span class="st">  </span><span class="kw">geom_jitter</span>(<span class="kw">aes</span>(<span class="dt">color =</span> cut), <span class="dt">width =</span>  <span class="fl">0.1</span>,</a>
-<a class="sourceLine" id="cb121-6" title="6">              <span class="dt">size =</span> <span class="fl">0.5</span>)</a></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-96-1.svg" width="672" /></p>
+<div class="sourceCode" id="cb71"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb71-1" title="1">p <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb71-2" title="2"><span class="st">  </span><span class="kw">geom_flat_violin</span>(<span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.25</span>)) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb71-3" title="3"><span class="st">  </span><span class="kw">geom_boxplot</span>(<span class="dt">fill =</span> <span class="st">&quot;white&quot;</span>, <span class="dt">position =</span> <span class="kw">position_nudge</span>(<span class="dt">x =</span> <span class="fl">0.25</span>),</a>
+<a class="sourceLine" id="cb71-4" title="4">               <span class="dt">width =</span> <span class="fl">0.1</span>) <span class="op">+</span><span class="st"> </span></a>
+<a class="sourceLine" id="cb71-5" title="5"><span class="st">  </span><span class="kw">geom_jitter</span>(<span class="kw">aes</span>(<span class="dt">color =</span> cut), <span class="dt">width =</span>  <span class="fl">0.1</span>,</a>
+<a class="sourceLine" id="cb71-6" title="6">              <span class="dt">size =</span> <span class="fl">0.5</span>)</a></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-71-1.svg" width="672" /></p>
 <p>上面就是一副比较基本的云雨图了，几个关键点：</p>
 <ol style="list-style-type: decimal">
 <li>箱线图一般都会过宽，从而遮挡半小提琴图和散点图的位置，应该减小<code>geom_boxplot()</code> 中的 <code>width</code><br />
@@ -217,17 +229,21 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ol>
 </div>
 <div id="坡度图" class="section level2">
-<h2><span class="header-section-number">5.2</span> 坡度图</h2>
+<h2><span class="header-section-number">3.2</span> 坡度图</h2>
 
 </div>
+</div>
+
+
+
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="ggpubr.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="ggpubr.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="bbplot.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

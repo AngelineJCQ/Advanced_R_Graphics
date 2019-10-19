@@ -1,3 +1,9 @@
+
+# (PART) 实例 {-}
+
+
+
+
 # 经济学人：Corruption and human development  {#Econmist}
 来源：[ggplot2 workshop by Harvad University](http://tutorials.iq.harvard.edu/R/Rgraphics/Rgraphics.html)
 

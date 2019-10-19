@@ -1,12 +1,14 @@
 
 
-# 山峦图   {#Ridge}
+# (PART) 几何对象 {-}
 
 ```{r, echo = F, message = F}
 library(tidyverse)
 library(ggridges)
 knitr::opts_chunk$set(message = F)
 ```
+
+# 山峦图   {#Ridge}
 
 
 ## 简介  
